@@ -1,0 +1,65 @@
+div.introduce_page
+	section.left
+		article.container .about
+			header
+				div.circle_wrap
+					div.circle .red
+					div.cricle .yellow
+					div.circle .green
+				div.title
+				div.content_about
+					h2
+					img
+					h2 > em
+	section.right
+		article.container .profile
+			header
+				div.circle_wrap
+					div.circle .red
+					div.cricle .yellow
+					div.circle .green
+				div.title
+			div.content_profile
+				div.profile_left
+					p+i+p
+				div.profile_right
+					p+i+p
+		article.container .skills
+			header
+				div.circle_wrap
+					div.circle .red
+					div.cricle .yellow
+					div.circle .green
+				div.title
+			div.content_skills
+				img*4
+		article.container .activity
+			header
+				div.circle_wrap
+					div.circle .red
+					div.cricle .yellow
+					div.circle .green
+				div.title
+			div.content_activity
+				ul
+					(li > p *2)*2
+
+div.project_page
+	article.container .project
+		header
+			div.circle_wrap
+				div.circle .red
+				div.cricle .yellow
+				div.circle .green
+			div.title
+		div.content_project
+			div.btn_develope
+				div.develope_img
+					img
+				p
+			div.btn_md
+				div.md_img
+					img
+				p
+			
+			
