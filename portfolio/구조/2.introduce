@@ -1,3 +1,6 @@
+nav
+	a*2
+	
 div.introduce_page
 	section.left
 		article.container .about
@@ -44,22 +47,6 @@ div.introduce_page
 				ul
 					(li > p *2)*2
 
-div.project_page
-	article.container .project
-		header
-			div.circle_wrap
-				div.circle .red
-				div.cricle .yellow
-				div.circle .green
-			div.title
-		div.content_project
-			div.btn_develope
-				div.develope_img
-					img
-				p
-			div.btn_md
-				div.md_img
-					img
-				p
+
 			
 			
