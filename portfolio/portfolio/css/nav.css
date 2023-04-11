@@ -6,14 +6,40 @@ nav {
   border-bottom: 1px solid var(--gray);
   z-index: 999;
 }
-nav a {
+nav .head_nav {
   color: var(--black);
   font-weight: 500;
   margin-left: 10px;
 }
-nav a:hover {
+nav .head_nav:hover {
   background-color: var(--gray);
   color: #000;
   padding: 5px 10px;
   border-radius: 10px;
+}
+.sub_nav {
+  width: 150px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: 1px solid var(--gray);
+  z-index: 999;
+  display: none;
+}
+.sub {
+  display: block;
+  margin: 10px 0;
+  padding: 5px 10px;
+  color: var(--black);
+  font-weight: 500;
+}
+.sub:first-child {
+  margin-bottom: 0;
+}
+.sub:last-child {
+  margin-top: 0;
+}
+.sub:hover {
+  background-color: var(--gray);
+  color: #000;
 }
