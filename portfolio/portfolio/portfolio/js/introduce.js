@@ -6,14 +6,14 @@ const activity = document.querySelector(".activity");
 window.onload = function () {
   setTimeout(function () {
     about.style.display = "block";
-  }, 700);
+  }, 1000);
   setTimeout(function () {
     profile.style.display = "block";
-  }, 1400);
+  }, 2000);
   setTimeout(function () {
     skill.style.display = "block";
-  }, 2100);
+  }, 3000);
   setTimeout(function () {
     activity.style.display = "block";
-  }, 2800);
+  }, 4000);
 };
