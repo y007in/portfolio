@@ -3,7 +3,6 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--skyblue);
-  /* padding: 60px 450px; */
 }
 .container_introduce {
   position: absolute;
@@ -63,7 +62,7 @@
 .content_profile {
   display: flex;
   line-height: 40px;
-  margin: 25px 70px;
+  margin: 25px 10px;
   font-size: 18px;
   justify-content: space-around;
 }
@@ -99,7 +98,7 @@
   animation: popup 1s;
 }
 
-li {
+.content_activity li {
   border-bottom: 1px solid var(--gray);
   padding: 15px 50px;
   list-style: none;

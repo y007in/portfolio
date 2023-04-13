@@ -4,19 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Yoojin's portfolio</title>
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <link rel="stylesheet" href="/css/style.css" />
     <script defer src="/js/introduce.js"></script>
   </head>
   <body>
     <nav>
-      <a class="head_nav" href="/html/introduce.html">😉 About Me</a>
-      <a class="head_nav" href="/html/project.html">📁 Project</a>
-      <div class="sub_nav">
-        <a class="sub" href="#">개발</a>
-        <a class="sub" href="#">영상&디자인</a>
-      </div>
+      <ul class="main_menu">
+        <li class="btn_menu">
+          <a class="head_nav" href="/html/introduce.html">😉 About Me</a>
+        </li>
+        <li class="btn_menu">
+          <a class="head_nav" href="/html/project.html">📁 Project</a>
+          <ul class="sub_menu">
+            <li><a class="sub" href="#">개발</a></li>
+            <li><a class="sub" href="#">영상&디자인</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
     <div class="introduce_page">
       <div class="container_introduce">
@@ -58,7 +64,7 @@
               </div>
               <div class="profile_right">
                 <h2 class="profile_title">Channel</h2>
-                <a href="#"><i class="bi bi-github"></i>GitHub</a>
+                <a href="#"><i class="bi bi-github"></i> GitHub</a>
                 <a href="#">
                   <img src="/img/velog.png" alt="bloglogo" width="15px" />
                   Blog</a
@@ -73,7 +79,7 @@
                 <div class="circle yellow"></div>
                 <div class="circle green"></div>
               </div>
-              <div class="title">Skills</div>
+              <div class="title">Studying</div>
             </header>
             <div class="content_skills">
               <div class="skill_wrap">
