@@ -1,0 +1,26 @@
+.pop {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+
+  border-radius: 50%;
+  text-align: center;
+}
+.pop a {
+  font-size: 30px;
+  line-height: 50px;
+}
+.pop:hover {
+  background-color: var(--gray);
+}
+.back {
+  position: absolute;
+  width: 150px;
+  top: 15px;
+  right: 30px;
+  display: none;
+
+  border: 1px solid black;
+}
