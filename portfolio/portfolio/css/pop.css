@@ -17,10 +17,27 @@
 }
 .back {
   position: absolute;
-  width: 150px;
+  width: 100px;
   top: 15px;
-  right: 30px;
+  right: 50px;
   display: none;
 
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  z-index: 10;
+}
+
+.slide {
+  display: block;
+  animation: slide 0.5s;
+}
+
+@keyframes slide {
+  from {
+    top: 15px;
+    right: 0;
+  }
+  to {
+    top: 15px;
+    right: 50px;
+  }
 }
