@@ -1,16 +1,13 @@
 .moviedesign_page {
   position: relative;
-  /* width: 100vw;
-  height: 100vh; */
   background-color: var(--skyblue);
 }
 .moviedesign_container {
   width: 1325px;
   position: absolute;
-  top: 50%;
+  padding-top: 80px;
   left: 50%;
-  transform: translate(-50%, -50%);
-  padding-top: 450px;
+  transform: translateX(-50%);
 }
 #moviedesign_title {
   font-size: 46px;
@@ -23,11 +20,12 @@
   border-radius: 10px;
   padding: 30px;
   background-color: var(--white);
+  margin-bottom: 50px;
 }
 .moviedesign_item {
   position: relative;
-  /* padding: 70px 40px 100px; */
-  /* opacity: 0.6; */
+  padding: 70px 40px 100px;
+  opacity: 0.6;
   transition: flex 1s, opacity 1s;
   z-index: 1;
   cursor: pointer;
@@ -47,4 +45,9 @@ figure {
 }
 .box_title {
   margin-bottom: 15px;
+}
+
+.moviedesign_item:hover {
+  flex: 1.5;
+  opacity: 1;
 }
