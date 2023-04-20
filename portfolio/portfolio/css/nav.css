@@ -41,6 +41,7 @@ nav .main_menu .btn_menu:hover {
   left: 120px;
   display: none;
 }
+
 .sub_menu li:hover {
   background-color: var(--gray);
   color: #000;
@@ -53,8 +54,8 @@ nav .main_menu .btn_menu:hover {
   font-weight: 500;
 }
 .sub:first-child {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 .sub:last-child {
-  margin-top: 0;
+  margin-top: 5px;
 }

@@ -8,6 +8,8 @@
   padding-top: 80px;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
+  animation: popup 1s;
 }
 #moviedesign_title {
   font-size: 46px;
@@ -66,4 +68,12 @@ figure {
   background-color: var(--blue);
   color: white;
   transition: 0.5s;
+}
+
+.modal {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  display: none;
+  z-index: 10;
 }

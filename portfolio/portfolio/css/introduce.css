@@ -108,12 +108,3 @@
 .content_activity li p:first-child {
   margin-right: 161px;
 }
-
-@keyframes popup {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
