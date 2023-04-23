@@ -1,7 +1,10 @@
-// const name = "장유진";
-// const search_input = document.querySelector(".search_input");
+//pop
+const pop = document.querySelector(".pop");
+const back = document.querySelector(".back");
 
-// if ((search_input.value = name)) {
-// } else {
-//   alert("다시");
-// }
+pop.addEventListener("mouseover", () => {
+  back.classList.add("slide");
+});
+pop.addEventListener("mouseleave", () => {
+  back.classList.remove("slide");
+});

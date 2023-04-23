@@ -17,13 +17,3 @@ window.onload = () => {
     activity.style.display = "block";
   }, 2800);
 };
-
-const pop = document.querySelector(".pop");
-const back = document.querySelector(".back");
-
-pop.onmouseover = () => {
-  back.classList.add("slide");
-};
-pop.onmouseout = () => {
-  back.classList.remove("slide");
-};
