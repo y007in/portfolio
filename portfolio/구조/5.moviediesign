@@ -1,0 +1,22 @@
+nav
+
+.moviedesign_page
+	.pop
+	.moviedesign .project_container
+		h1#project_title
+	section#moviedesign_items
+		article.moviedesign_item
+			div.content
+				figure>video
+				.txt >.box_title+p
+			div.detail .movie1
+		article.moviedesign_item
+			div.content
+				figure>video
+				.txt >.box_title+p
+			div.detail .movie2
+		article.moviedesign_item
+			div.content
+				figure>video
+				.txt >.box_title+p
+			div.detail .design1
