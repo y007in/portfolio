@@ -20,6 +20,7 @@
   height: 890px;
   position: relative;
   display: none;
+  transition: all 2s;
   animation: popup 1s;
 }
 

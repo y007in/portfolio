@@ -1,0 +1,24 @@
+.develope_page {
+  position: relative;
+}
+.project_container {
+  width: 1325px;
+  position: absolute;
+  padding-top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* display: none; */
+  animation: popup 1s;
+}
+#project_title {
+  display: inline-block;
+  font-size: 46px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--gray);
+  padding: 0 20px;
+}
+span {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 10px;
+}

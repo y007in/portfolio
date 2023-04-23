@@ -4,9 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/js/script.js"></script>
     <title>Document</title>
   </head>
   <body>
-    something
+    <nav>
+      <ul class="main_menu">
+        <li class="btn_menu">
+          <a class="head_nav" href="/html/introduce.html">💙 About Me</a>
+        </li>
+        <li class="btn_menu">
+          <a class="head_nav" href="/html/project.html">📁 Project</a>
+          <ul class="sub_menu">
+            <li><a class="sub" href="/html/develope.html">개발</a></li>
+            <li>
+              <a class="sub" href="/html/moviedesign.html">영상&디자인</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="develope_page">
+      <div class="pop">
+        <a href="/preloading.html"
+          >🏠
+          <p class="back">처음으로</p></a
+        >
+      </div>
+      <div class="project_container">
+        <h1 id="project_title">
+          개발 프로젝트<span>* 클릭 시 자세한 내용을 볼 수 있습니다.</span>
+        </h1>
+        <section id="moviedesign_items"></section>
+      </div>
+    </div>
   </body>
 </html>

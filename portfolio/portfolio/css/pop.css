@@ -1,12 +1,11 @@
 .pop {
   width: 60px;
   height: 60px;
-  position: absolute;
   top: 70px;
   right: 30px;
-
   border-radius: 50%;
   text-align: center;
+  position: fixed;
 }
 .pop a {
   font-size: 30px;
@@ -18,11 +17,12 @@
 .back {
   position: absolute;
   width: 100px;
-  top: 15px;
+  top: 5px;
   right: 50px;
   display: none;
-
-  /* border: 1px solid black; */
+  color: var(--black);
+  font-size: 18px;
+  font-weight: bold;
   z-index: 10;
 }
 
@@ -33,11 +33,11 @@
 
 @keyframes slide {
   from {
-    top: 15px;
+    top: 5px;
     right: 0;
   }
   to {
-    top: 15px;
+    top: 5px;
     right: 50px;
   }
 }
