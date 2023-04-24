@@ -83,7 +83,9 @@ figure {
   display: none;
 }
 .moviedesign_item.open {
+  padding-bottom: 40px;
   opacity: 1;
+  background-color: var(--lightgray);
 }
 .moviedesign_item.open > .detail {
   display: block;
