@@ -109,3 +109,27 @@
 .content_activity li p:first-child {
   margin-right: 161px;
 }
+
+.go {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  color: var(--black);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.go span {
+  font-size: normal;
+  animation: click 1.3s infinite;
+  font-size: 20px;
+}
+
+@keyframes click {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

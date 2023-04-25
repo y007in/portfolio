@@ -1,68 +1,162 @@
 .develope_page {
   position: relative;
 }
-.project_container {
-  width: 1325px;
+/* slider btn */
+.btnPrev {
+  width: 35px;
+  height: 35px;
   position: absolute;
-  padding-top: 80px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  /* display: none; */
-  animation: popup 1s;
-}
-.arrow {
-  position: absolute;
-  font-size: 50px;
-  width: 70px;
-  height: 70px;
-}
-.arrow:hover {
-  background-color: var(--gray);
+  transform: translate(-550px, -50%);
+  display: flex;
+  align-items: center;
   text-align: center;
+  cursor: pointer;
+}
+.btnPrev span {
+  font-size: 8px;
+  color: var(--black);
+  opacity: 1;
+  transform: translate(150%);
+  transition: 0.5s;
+}
+.btnPrev::before {
+  content: "";
+  background-color: var(--black);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform-origin: left center;
+  transform: rotate(0deg);
+  transition: 0.8s;
+}
+.btnPrev::after {
+  content: "";
+  background-color: black;
+  display: block;
+  width: 100%;
+  height: 1px;
 
-  border-radius: 50%;
-}
-#left {
+  position: absolute;
   top: 50%;
-  left: 5%;
+  left: 0px;
+  transform-origin: left center;
+  transform: rotate(0deg);
+  transition: 0.8s;
+}
+.btnPrev:hover span {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.btnPrev:hover::before {
+  transform: rotate(-55deg);
+}
+.btnPrev:hover::after {
+  transform: rotate(55deg);
+}
+.btnNext {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(570px, -50%);
+  display: flex;
+  align-items: center;
+  text-align: center;
   cursor: pointer;
 }
-#right {
-  top: 50%;
-  right: 5%;
-  cursor: pointer;
+.btnNext span {
+  font-size: 8px;
+  color: var(--black);
+  opacity: 1;
+  transform: translate(-150%);
+  transition: 0.5s;
 }
-#project_title {
-  display: inline-block;
-  font-size: 46px;
-  margin-bottom: 30px;
-  border-bottom: 2px solid var(--gray);
-  padding: 0 20px;
+.btnNext::before {
+  content: "";
+  background-color: var(--black);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform-origin: right center;
+  transform: rotate(0deg);
+  transition: 0.8s;
+}
+.btnNext::after {
+  content: "";
+  background-color: black;
+  /* display: block; */
+  width: 100%;
+  height: 1px;
+
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform-origin: right center;
+  transform: rotate(0deg);
+  transition: 0.8s;
+}
+.btnNext:hover span {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.btnNext:hover::before {
+  transform: rotate(-55deg);
+}
+.btnNext:hover::after {
+  transform: rotate(55deg);
 }
 
 .develope_item {
   width: 70%;
-  margin: 50px 200px;
+  margin: 40px 200px;
   padding: 30px;
   box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.05);
 }
 .develope_item:hover {
-  background-color: var(--lightgray);
   border: 1px solid var(--gray);
   border-radius: 10px;
 }
+.projects_title {
+  margin-bottom: 15px;
+}
+.develope_item:hover #proj-pic {
+  background-color: var(--lightgray);
+  border: 1px solid var(--gray);
+}
+.develope_item:hover .projects_title {
+  width: fit-content;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: var(--blue);
+  color: white;
+  transition: 0.5s;
+}
+.sub_title {
+  margin-bottom: 10px;
+}
 #proj-pic {
   text-align: center;
-  /* border: 1px solid var(--gray); */
+
   border-radius: 10px;
-  padding: 40px 20px;
+  padding: 30px 15px;
+  margin: 20px;
   /* box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.05); */
 }
-/* #sub-pic {
-} */
+
+.main_pic {
+  border: 1px solid var(--gray);
+}
 .small {
-  width: 150px;
-  margin: 10px 15px 10px 0;
+  width: 172px;
+  /* margin: 10px 15px 10px 0; */
+  border: 1px solid var(--gray);
 }
 
 .small:last-child {
@@ -70,5 +164,40 @@
 }
 
 #develope_content {
-  margin: 20px;
+  margin: 0 40px;
+
+  /* border: 1px solid red; */
+}
+
+.item_detail {
+  padding-bottom: 15px;
+}
+#buttons {
+  width: 100%;
+  height: 60px;
+}
+.btn {
+  float: right;
+  padding: 5px 25px 10px 25px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 17px;
+  border: none;
+  font-weight: bold;
+}
+.btn a {
+  display: inline-block;
+  color: var(--black);
+  width: 100%;
+  height: 100%;
+}
+.btn a i {
+  font-size: 23px;
+}
+.btn:hover {
+  background-color: var(--black);
+  transition: 1s;
+}
+.btn:hover a {
+  color: var(--white);
 }

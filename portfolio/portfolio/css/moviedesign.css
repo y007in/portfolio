@@ -4,10 +4,10 @@
 .project_container {
   width: 1325px;
   position: absolute;
-  padding-top: 80px;
+  padding-top: 65px;
   left: 50%;
   transform: translateX(-50%);
-  /* display: none; */
+  display: none;
   animation: popup 1s;
 }
 #project_title {
@@ -16,6 +16,7 @@
   margin-bottom: 30px;
   border-bottom: 2px solid var(--gray);
   padding: 0 20px;
+  margin-bottom: 30px;
 }
 span {
   font-size: 14px;

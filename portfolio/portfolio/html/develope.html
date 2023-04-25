@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/js/script.js"></script>
     <script defer src="/js/develope.js"></script>
     <title>Document</title>
   </head>
@@ -35,24 +36,29 @@
       <div class="project_container">
         <h1 id="project_title">개발 프로젝트</h1>
         <section id="moviedesign_items">
-          <div class="arrow" id="left">&lang;</div>
-          <div class="arrow" id="right">&rang;</div>
+          <div class="btnPrev">
+            <span>PREV</span>
+          </div>
+          <div class="btnNext">
+            <span>NEXT</span>
+          </div>
+
           <article class="develope_item">
             <div id="proj-pic">
-              <img src="/img/1.png" width="700" alt="" />
+              <img src="/img/1.png" width="700" alt="" class="main_pic" />
               <div id="sub-pic">
-                <img src="/img/야돈.jpg" alt="" class="small" />
+                <img src="/img/2.png" alt="" class="small" />
                 <img src="/img/1.PNG" alt="" class="small" />
-                <img src="/img/야돈.jpg" alt="" class="small" />
+                <img src="/img/1.png" alt="" class="small" />
                 <img src="/img/2.png" alt="" class="small" />
               </div>
             </div>
             <div id="develope_content">
-              <h1 class="project_title">개인 포트폴리오</h1>
+              <h1 class="projects_title">개인 포트폴리오</h1>
               <h3 class="sub_title">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </h3>
-              <p>
+              <p class="item_detail">
                 Laudantium porro vitae possimus aliquam nam consequatur totam
                 sed dolores, quidem qui blanditiis natus quam, sapiente id
                 labore? Accusamus placeat nulla cum modi perspiciatis obcaecati
@@ -65,17 +71,56 @@
                 enim, eveniet eaque sit tempora quisquam sunt dicta excepturi
                 alias incidunt natus odio voluptate? Aut optio, explicabo
                 voluptate repellat et natus temporibus laborum cum, neque
-                voluptatibus eos! Dolores, eveniet optio? Nisi, corporis nobis
-                sunt fugit cum labore maxime aliquam voluptas non, soluta
-                debitis ex. Ad fugit minus sapiente adipisci eius laboriosam
-                accusantium qui natus quae expedita porro molestiae aliquid
-                beatae hic praesentium exercitationem deleniti, eum vitae quia
-                voluptate aspernatur? Ea repellendus dicta nisi incidunt. Libero
-                error est reprehenderit minus voluptate, dolor sunt quis quo.
-                Voluptates officia consectetur nam velit iste ea odio
+                voluptatibus eos! Dolores, eveniet optio? Nisi,
               </p>
-              <button>사이트 보기</button>
-              <button>GitHub</button>
+              <div id="buttons">
+                <button class="github btn">
+                  <a href="#"><i class="bi bi-github"></i> GitHub</a>
+                </button>
+                <button class="site btn">
+                  <a href="#"><i class="bi bi-link"></i> 사이트 보기</a>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="develope_item">
+            <div id="proj-pic">
+              <img src="/img/1.png" width="700" alt="" class="main_pic" />
+              <div id="sub-pic">
+                <img src="/img/2.png" alt="" class="small" />
+                <img src="/img/1.PNG" alt="" class="small" />
+                <img src="/img/1.png" alt="" class="small" />
+                <img src="/img/2.png" alt="" class="small" />
+              </div>
+            </div>
+            <div id="develope_content">
+              <h1 class="projects_title">개인 포트폴리오</h1>
+              <h3 class="sub_title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </h3>
+              <p class="item_detail">
+                Laudantium porro vitae possimus aliquam nam consequatur totam
+                sed dolores, quidem qui blanditiis natus quam, sapiente id
+                labore? Accusamus placeat nulla cum modi perspiciatis obcaecati
+                est ullam rem hic optio. Optio, non. Nihil sunt quo odio
+                dignissimos quas eligendi, nostrum repellendus ullam fugit
+                deserunt a molestias ad. Quo optio impedit, temporibus ut vitae
+                adipisci laudantium nam doloremque nemo exercitationem ex. Totam
+                voluptatem optio dolores iste quaerat. Inventore, nobis aperiam.
+                Reprehenderit harum possimus aperiam tenetur laboriosam rem
+                enim, eveniet eaque sit tempora quisquam sunt dicta excepturi
+                alias incidunt natus odio voluptate? Aut optio, explicabo
+                voluptate repellat et natus temporibus laborum cum, neque
+                voluptatibus eos! Dolores, eveniet optio? Nisi,
+              </p>
+              <div id="buttons">
+                <button class="github btn">
+                  <a href="#"><i class="bi bi-github"></i> GitHub</a>
+                </button>
+                <button class="site btn">
+                  <a href="#"><i class="bi bi-link"></i> 사이트 보기</a>
+                </button>
+              </div>
             </div>
           </article>
         </section>
