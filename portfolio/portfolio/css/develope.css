@@ -1,6 +1,7 @@
 .develope_page {
   position: relative;
 }
+
 /* slider btn */
 .btnPrev {
   width: 35px;
@@ -118,7 +119,14 @@
   margin: 40px 200px;
   padding: 30px;
   box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid blue;
+  display: none;
 }
+.develope_item.on {
+  display: block;
+}
+
 .develope_item:hover {
   border: 1px solid var(--gray);
   border-radius: 10px;

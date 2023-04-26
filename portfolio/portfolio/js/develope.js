@@ -19,13 +19,11 @@ function changePic() {
 
 const develope_item = document.querySelectorAll(".develope_item");
 const moviedesign_items = document.querySelector("#moviedesign_items");
-const arrows = document.querySelectorAll(".arrow");
+const arrow = document.querySelectorAll(".arrow");
 
 let i = 0;
 
-moviedesign_items = develope_item[0];
-
-arrows.forEach((e) => {
+arrow.forEach((e) => {
   e.addEventListener("click", (e) => {
     if (e.target.id === "left") {
       i--;
@@ -38,6 +36,13 @@ arrows.forEach((e) => {
         i = 0;
       }
     }
-    develope_item[i];
+    if (develope_item.classList.contains("on")) {
+      develope_item.classList.remove("on");
+    } else {
+      develope_item.forEach(function (e) {
+        e.classList.remove("on");
+      });
+    }
+    develope_item[i].classList.add("on");
   });
 });
