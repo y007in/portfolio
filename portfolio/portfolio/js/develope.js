@@ -1,12 +1,20 @@
-let mainpic = document.querySelector(".main_pic");
+let mainpic = document.querySelectorAll(".main_pic");
 let subpic = document.querySelectorAll(".small");
 const moviedesign_container = document.querySelector(".project_container");
+const develope_item = document.querySelectorAll(".develope_item");
+const moviedesign_items = document.querySelector("#moviedesign_items");
+const arrow = document.querySelectorAll(".arrow");
 
 window.onload = () => {
   setTimeout(function () {
     moviedesign_container.style.display = "block";
   }, 200);
 };
+
+// develope_item.forEach((e)=>{
+//   let test = e.currentTarget.classList();
+
+// })
 
 for (let i = 0; i < subpic.length; i++) {
   subpic[i].addEventListener("click", changePic);
@@ -17,32 +25,33 @@ function changePic() {
   mainpic.setAttribute("src", newPic);
 }
 
-const develope_item = document.querySelectorAll(".develope_item");
-const moviedesign_items = document.querySelector("#moviedesign_items");
-const arrow = document.querySelectorAll(".arrow");
-
+develope_item[0].classList.add("on");
 let i = 0;
 
-arrow.forEach((e) => {
-  e.addEventListener("click", (e) => {
-    if (e.target.id === "left") {
-      i--;
-      if (i < 0) {
-        i = develope_item.length - 1;
-      }
-    } else if (e.target.id === "right") {
-      i++;
-      if (i > develope_item.length) {
-        i = 0;
-      }
-    }
-    if (develope_item.classList.contains("on")) {
-      develope_item.classList.remove("on");
-    } else {
-      develope_item.forEach(function (e) {
-        e.classList.remove("on");
-      });
-    }
-    develope_item[i].classList.add("on");
-  });
-});
+// arrow.forEach((e) => {
+//   e.addEventListener("click", (e) => {
+//     let slide_on = e.currentTarget.classList;
+
+//     if (e.target.id === "left") {
+//       i--;
+//       if (slide_on.contains("on")) {
+//         slide_on.remove("on");
+//       } else {
+//         develope_item.forEach(function (e) {
+//           e.classList.remove("on");
+//         });
+//         develope_item[i].classList.add("on");
+//       }
+//     } else if (e.target.id === "right") {
+//       i++;
+//       if (slide_on.contains("on")) {
+//         slide_on.remove("on");
+//       } else {
+//         develope_item.forEach(function (e) {
+//           e.classList.remove("on");
+//         });
+//         develope_item[i].classList.add("on");
+//       }
+//     }
+//   });
+// });

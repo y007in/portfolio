@@ -6,6 +6,7 @@
   border-radius: 50%;
   text-align: center;
   position: fixed;
+  z-index: 999999;
 }
 .pop a {
   font-size: 30px;
