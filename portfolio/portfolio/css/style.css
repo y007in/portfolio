@@ -31,7 +31,9 @@ h2 {
 h3 {
   font-size: 20px;
 }
-
+body {
+  background-color: var(--skyblue);
+}
 /* container */
 .container {
   background-color: #fff;
@@ -89,5 +91,58 @@ header {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  /* container */
+  .container {
+    background-color: #fff;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+
+  header {
+    background-color: #e2e2e2;
+    height: 63px;
+    width: inherit;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+  }
+  .circle_wrap {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  .circle {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .red {
+    background-color: var(--red);
+  }
+  .yellow {
+    background-color: var(--yellow);
+  }
+  .green {
+    background-color: var(--green);
+  }
+
+  .title {
+    width: 30%;
+    height: 36px;
+    background-color: #f9f9f9;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
   }
 }
