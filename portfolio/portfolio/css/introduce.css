@@ -245,20 +245,6 @@
   }
 
   .go {
-    position: unset;
-
-    color: var(--black);
-    font-size: 18px;
-    font-weight: bold;
-    background-color: var(--gray);
-
-    padding: 0 10px;
-    border-radius: 50px;
-  }
-
-  .go span {
-    font-size: normal;
-    animation: click 1s infinite ease;
-    font-size: 18px;
+    display: none;
   }
 }

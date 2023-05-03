@@ -42,3 +42,50 @@
     right: 50px;
   }
 }
+
+@media (max-width: 768px) {
+  .pop {
+    width: 20px;
+    height: 20px;
+    top: 70px;
+    right: 30px;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    z-index: 999999;
+  }
+  .pop a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .pop:hover {
+    background-color: var(--gray);
+  }
+  .back {
+    position: absolute;
+    width: 100px;
+    top: 5px;
+    right: 10px;
+    display: none;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 10;
+  }
+
+  .slide {
+    display: block;
+    animation: slide 0.5s;
+  }
+
+  @keyframes slide {
+    from {
+      top: 5px;
+      right: 0;
+    }
+    to {
+      top: 5px;
+      right: 10px;
+    }
+  }
+}
