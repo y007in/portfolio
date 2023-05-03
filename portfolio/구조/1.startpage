@@ -1,3 +1,7 @@
 div.start_page
-	div.searchbar
-		a<i 
+	div.search_container
+		div.start_title 
+			h1
+		div.search_from
+			div.search_search
+				a.search_logo , div.textbox

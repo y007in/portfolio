@@ -1,0 +1,19 @@
+nav
+	[same html structure]
+div.project_container
+	h1#project_title
+	section#project_items
+		div.arrow.btnPrev #left > span
+		div.arrow.btnNext #right > span
+		article#develope_item
+			div.proj-pic > img
+				div.sub-pic >img*4
+			div.develope_content
+				h1.projects_title
+				h3.sub_title
+				p.item_detail
+				div.buttons 
+					button.github.btn
+					button.site.btn
+	...
+	a.pageback
